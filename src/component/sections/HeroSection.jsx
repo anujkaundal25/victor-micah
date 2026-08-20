@@ -41,7 +41,7 @@ export default function HeroSlider() {
   };
 
   return (
-    <section className="relative w-full h-[85vh] min-h-[600px] overflow-hidden bg-gray-900 text-white">
+    <section className="relative w-full h-[85vh] min-h-screen overflow-hidden bg-gray-900 text-white pt-20">
       {/* Smooth Sliding Background Track */}
       <div 
         className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"

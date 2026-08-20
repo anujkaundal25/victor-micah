@@ -20,7 +20,7 @@ function Footer() {
             </p>
             <div className="space-y-2 text-sm text-slate-300 pt-2">
               <p className="flex items-center gap-2">
-                <span className="font-medium text-white">Email:</span> contact@medintegrity.com
+                <span className="font-medium text-white">Email:</span> contact@victormicah.com
               </p>
               <p className="flex items-center gap-2">
                 <span className="font-medium text-white">Phone:</span> 6784628728
