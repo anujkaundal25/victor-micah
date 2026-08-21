@@ -5,7 +5,7 @@ function WhyChooseUs() {
   const leftFeatures = [
     {
       title: "AI‑Driven Innovation",
-      description: "Novaris employs AI‑accelerated prototyping, code generation and testing to reduce development cycles and enable rapid iteration without sacrificing quality.",
+      description: "Victor Micah employs AI‑accelerated prototyping, code generation and testing to reduce development cycles and enable rapid iteration without sacrificing quality.",
     },
     {
       title: "Enterprise‑Grade Expertise",
@@ -70,7 +70,7 @@ function WhyChooseUs() {
               <div className="relative w-full h-full rounded-xl overflow-hidden bg-white">
                 <Image
                   src="/hero/1.webp"
-                  alt="Why Choose Us Novaris"
+                  alt="Why Choose Us Victor Micah"
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 />

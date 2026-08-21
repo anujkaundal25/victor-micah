@@ -44,9 +44,9 @@ function Blog() {
           <div>
             <a
               href="#all-blogs"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white font-semibold text-sm rounded-full shadow-md hover:bg-slate-600 transition-all duration-300"
-            >
-              <span>&rarr;</span> See All Blogs
+              className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white font-semibold text-sm rounded-xl shadow-md hover:bg-slate-600 transition-all duration-300"
+            >See All Blogs 
+              <span>&rarr;</span>
             </a>
           </div>
         </div>
@@ -68,13 +68,13 @@ function Blog() {
                 
                 {/* Blog Category Badge */}
                 <div className="absolute top-4 left-4 z-20 bg-slate-900/80 backdrop-blur-sm text-white text-xs font-bold tracking-wider px-3 py-1 rounded-lg shadow-md border border-white/20">
-                  Blog
+                  <span className="block text-sm font-semibold leading-tight">{blog.date} {blog.month}</span>
                 </div>
 
                 {/* Date Badge overlapping the bottom-left of the image */}
                 <div className="absolute bottom-3 left-4 z-20 bg-slate-900/90 backdrop-blur-sm text-white text-center rounded-xl px-3 py-1.5 shadow-md border border-white/20">
-                  <span className="block text-sm font-extrabold leading-tight">{blog.date}</span>
-                  <span className="block text-[10px] uppercase font-medium text-slate-300">{blog.month}</span>
+                  {/* <span className="block text-sm font-semibold leading-tight">{blog.date} {blog.month}</span> */}
+                  {/* <span className="block text-[10px] uppercase font-medium text-slate-300">{blog.month}</span> */}
                 </div>
               </div>
 
@@ -93,7 +93,7 @@ function Blog() {
                 <div className="pt-2">
                   <a
                     href="#blog-detail"
-                    className="inline-block py-2.5 px-6 bg-slate-900 text-white font-semibold text-xs uppercase tracking-wider rounded-full shadow hover:bg-white hover:text-slate-900 transition"
+                    className="inline-block py-2.5 px-6 bg-slate-900 text-white font-semibold text-xs uppercase tracking-wider rounded-xl shadow hover:bg-white hover:text-slate-900 transition"
                   >
                     Learn More &rarr;
                   </a>

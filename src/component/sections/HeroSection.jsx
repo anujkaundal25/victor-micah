@@ -7,12 +7,12 @@ const slides = [
   {
     image: '/hero/1.webp',
     title: 'Enterprise-Grade Software Engineered for Performance',
-    subtitle: 'Avoid inflated costs. Novaris delivers advanced software solutions and systems for businesses and industries, combining Design Thinking with AI Acceleration & Agile Methodology',
+    subtitle: 'Avoid inflated costs. Delivers advanced software solutions and systems for businesses and industries, combining Design Thinking with AI Acceleration & Agile Methodology',
   },
   {
     image: '/hero/2.webp',
     title: 'Intelligence & Scale for Modern Enterprises',
-    subtitle: 'Your business deserves technology that keeps pace with your ambitions. Novaris blends elite engineering expertise with artificial intelligence to build sophisticated systems.',
+    subtitle: 'Your business deserves technology that keeps pace with your ambitions. Blends elite engineering expertise with artificial intelligence to build sophisticated systems.',
   },
   {
     image: '/hero/3.webp',
@@ -72,7 +72,7 @@ export default function HeroSlider() {
         <div className="max-w-2xl space-y-6 pointer-events-auto">
           
           <span className="inline-block px-3.5 py-1 text-xs font-semibold tracking-wider uppercase bg-white/10 backdrop-blur-md rounded-full border border-white/20">
-            Novaris Engineering
+            Victor Micah
           </span>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight transition-all duration-700">

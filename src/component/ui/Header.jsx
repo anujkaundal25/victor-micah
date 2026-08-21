@@ -60,7 +60,7 @@ function Header() {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
           
           {/* Contact Details with Icons */}
-          <div className="flex flex-wrap items-center gap-6">
+          <div className="flex flex-wrap items-center gap-6 pl-11">
             <a href="mailto:contact@victormicah.com" className="flex items-center gap-2 hover:text-white transition-colors">
               <HiMail className="text-slate-400" size={16} />
               contact@victormicah.com
@@ -72,7 +72,7 @@ function Header() {
           </div>
 
           {/* Social Icons */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-3 pr-8">
             {socialLinks.map((social, index) => (
               <a
                 key={index}

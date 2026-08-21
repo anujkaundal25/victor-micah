@@ -14,8 +14,8 @@ function About() {
           {/* Left Side: Single Image */}
           <div className="relative h-[450px] sm:h-[550px] rounded-2xl overflow-hidden shadow-xl border border-slate-200">
             <Image
-              src="/hero/2.webp"
-              alt="Novaris Professional"
+              src="/about.webp"
+              alt="Professional"
               fill
               className="object-cover object-center"
             />
@@ -32,11 +32,11 @@ function About() {
             </h2>
 
             <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
-              Our story begins in Atlanta, Georgia and emphasizes our mission to serve enterprise and government clients, and introduces our leadership. Novaris emerged from a vision to deliver advanced software solutions with the expertise and precision required by large enterprises and public institutions.
+              Our story begins in Atlanta, Georgia and emphasizes our mission to serve enterprise and government clients, and introduces our leadership. Emerged from a vision to deliver advanced software solutions with the expertise and precision required by large enterprises and public institutions.
             </p>
 
             <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
-              By combining senior engineering leadership with AI‑accelerated workflows, we deliver state‑of‑the‑art solutions that meet stringent quality, security and compliance standards. Novaris serves clients across the U.S., Canada, the UK, Ghana and beyond.
+              By combining senior engineering leadership with AI‑accelerated workflows, we deliver state‑of‑the‑art solutions that meet stringent quality, security and compliance standards. Serves clients across the U.S., Canada, the UK, Ghana and beyond.
             </p>
 
             <div className="pt-2">
@@ -56,22 +56,22 @@ function About() {
           
           {/* Card 1: Our Story */}
           <div className="bg-white/80 backdrop-blur-sm border-2 border-slate-200 p-8 rounded-2xl shadow-sm space-y-4 hover:border-slate-400 hover:shadow-md transition">
-            <div className="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold text-lg shadow">
+            {/* <div className="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold text-lg shadow">
               01
-            </div>
+            </div> */}
             <h3 className="text-xl font-bold text-slate-900">
               Our Story
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Novaris emerged from a vision to deliver advanced software solutions with the expertise and precision required by large enterprises and public institutions. Based in Atlanta, Georgia, we have grown into a global team of senior engineers, designers and strategists. Our mission is to engineer intelligent, secure and enduring software systems that drive innovation and positive change.
+              Victor Micah emerged from a vision to deliver advanced software solutions with the expertise and precision required by large enterprises and public institutions. Based in Atlanta, Georgia, we have grown into a global team of senior engineers, designers and strategists. Our mission is to engineer intelligent, secure and enduring software systems that drive innovation and positive change.
             </p>
           </div>
 
           {/* Card 2: Our Values */}
           <div className="bg-white/80 backdrop-blur-sm border-2 border-slate-200 p-8 rounded-2xl shadow-sm space-y-4 hover:border-slate-400 hover:shadow-md transition">
-            <div className="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold text-lg shadow">
+            {/* <div className="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold text-lg shadow">
               02
-            </div>
+            </div> */}
             <h3 className="text-xl font-bold text-slate-900">
               Our Values
             </h3>

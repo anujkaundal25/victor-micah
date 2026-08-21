@@ -62,10 +62,10 @@ function Services() {
               </div>
 
               {/* Learn More Button */}
-              <div className=" absolute -bottom-5 left-30 pt-8 text-center">
+              <div className=" absolute -bottom-4 left-30 pt-8 text-center">
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center w-full py-2.5 px-4 bg-slate-900 text-white font-semibold text-xs uppercase tracking-wider rounded-full shadow hover:bg-white hover:text-slate-900 transition"
+                  className="inline-flex items-center justify-center w-full py-2.5 px-4 bg-slate-900 text-white font-semibold text-xs uppercase tracking-wider rounded-xl shadow hover:bg-white hover:text-slate-900 transition"
                 >
                   Learn More &rarr;
                 </a>
