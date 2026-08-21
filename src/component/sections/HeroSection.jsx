@@ -98,14 +98,14 @@ export default function HeroSlider() {
       {/* Slider Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-black/40 hover:bg-black/60 text-white rounded-full backdrop-blur-sm transition focus:outline-none"
+        className="hidden lg:block absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-black/40 hover:bg-black/60 text-white rounded-full backdrop-blur-sm transition focus:outline-none"
         aria-label="Previous Slide"
       >
         ❮
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-black/40 hover:bg-black/60 text-white rounded-full backdrop-blur-sm transition focus:outline-none"
+        className="hidden lg:block absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-black/40 hover:bg-black/60 text-white rounded-full backdrop-blur-sm transition focus:outline-none"
         aria-label="Next Slide"
       >
         ❯
