@@ -42,11 +42,11 @@ function Header() {
   }, [lastScrollY]);
 
   const pages = [
-    { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Blog", href: "#blog" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Services", href: "/service" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const socialLinks = [
@@ -146,7 +146,7 @@ function Header() {
               </nav>
 
               <a
-                href="#contact"
+                href="/contact"
                 className="bg-white text-slate-900 font-semibold px-5 py-2.5 rounded-lg text-sm shadow-md hover:bg-slate-200 transition duration-200"
               >
                 Get in Touch
@@ -208,7 +208,7 @@ function Header() {
             ))}
             <div className="pt-2">
               <a
-                href="#contact"
+                href="/contact"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block w-full text-center bg-white text-slate-900 font-semibold py-2.5 rounded-lg text-sm shadow hover:bg-slate-200 transition"
               >

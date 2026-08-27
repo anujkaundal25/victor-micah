@@ -41,7 +41,7 @@ function About() {
 
             <div className="pt-2">
               <a
-                href="#contact"
+                href="/contact"
                 className="inline-block px-7 py-3 bg-slate-900 text-white font-semibold text-sm rounded-md shadow-lg hover:bg-slate-600 transition"
               >
                 Contact Us

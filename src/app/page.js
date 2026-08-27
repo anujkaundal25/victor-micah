@@ -12,7 +12,7 @@ import Contact from "@/component/sections/Contact";
 export default function Home() {
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
     <HeroSection/>
     <About/>
     <Services/>
@@ -20,7 +20,7 @@ export default function Home() {
     <WorkFlow/>
     <Blog/>
     <Contact/>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 }
