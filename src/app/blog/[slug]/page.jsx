@@ -2,15 +2,23 @@ import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import blogData from "../data";
-import { 
-  HiOutlineArrowLeft, 
-  HiOutlineCalendar, 
+import {
+  HiOutlineArrowLeft,
+  HiOutlineCalendar,
   HiOutlineClock,
-  HiOutlineUserCircle 
+  HiOutlineUserCircle,
 } from "react-icons/hi2";
+
+// Generate all dynamic blog pages during the static build
+export function generateStaticParams() {
+  return blogData.map((blog) => ({
+    slug: blog.slug,
+  }));
+}
 
 export default async function BlogPage({ params }) {
   const { slug } = await params;
+
   const blog = blogData.find((item) => item.slug === slug);
 
   if (!blog) {
@@ -19,17 +27,17 @@ export default async function BlogPage({ params }) {
 
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900 selection:bg-slate-900 selection:text-white">
-      
       {/* IMMERSIVE HERO SECTION WITH BACKGROUND IMAGE */}
       <section className="relative bg-slate-950 text-white pt-50 pb-24 px-5 overflow-hidden">
         {/* Background Image with Dark Gradient Overlay */}
         {blog.image && (
           <div className="absolute inset-0 z-0">
-            <img 
-              src={blog.image} 
-              alt={blog.title} 
+            <img
+              src={blog.image}
+              alt={blog.title}
               className="w-full h-full object-cover opacity-25 scale-105 filter blur-[2px]"
             />
+
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-slate-950/50 to-slate-950/50" />
           </div>
         )}
@@ -37,11 +45,12 @@ export default async function BlogPage({ params }) {
         <div className="mx-auto max-w-4xl relative z-10 space-y-6 pt-6">
           {/* Back Button */}
           <div>
-            <Link 
-              href="/blog" 
+            <Link
+              href="/blog"
               className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-full border border-white/20 transition-all backdrop-blur-md shadow-sm"
             >
-              <HiOutlineArrowLeft /> Back to Insights
+              <HiOutlineArrowLeft />
+              Back to Insights
             </Link>
           </div>
 
@@ -58,14 +67,19 @@ export default async function BlogPage({ params }) {
           {/* Meta Info */}
           <div className="flex flex-wrap items-center gap-6 text-sm text-slate-300 pt-2 border-t border-white/10">
             <span className="flex items-center gap-2 font-medium text-white">
-              <HiOutlineUserCircle className="text-lg text-slate-400" /> {blog.author}
+              <HiOutlineUserCircle className="text-lg text-slate-400" />
+              {blog.author}
             </span>
+
             <span className="flex items-center gap-1.5">
-              <HiOutlineCalendar className="text-slate-400" /> {blog.date}
+              <HiOutlineCalendar className="text-slate-400" />
+              {blog.date}
             </span>
+
             {blog.readTime && (
               <span className="flex items-center gap-1.5">
-                <HiOutlineClock className="text-slate-400" /> {blog.readTime}
+                <HiOutlineClock className="text-slate-400" />
+                {blog.readTime}
               </span>
             )}
           </div>
@@ -74,7 +88,6 @@ export default async function BlogPage({ params }) {
 
       {/* BLOG CONTENT CONTAINER */}
       <article className="mx-auto max-w-4xl px-5 py-16 -mt-8 relative z-20">
-        
         {/* Excerpt Box */}
         <div className="mb-12 p-6 sm:p-8 bg-white rounded-2xl border border-slate-200 shadow-xl text-lg md:text-xl font-medium leading-relaxed text-slate-700 border-l-4 border-l-slate-900">
           {blog.excerpt}
@@ -89,10 +102,17 @@ export default async function BlogPage({ params }) {
               return null;
             }
 
+            {/* Horizontal Rule */}
             if (trimmed === "---") {
-              return <hr key={index} className="my-10 border-slate-200" />;
+              return (
+                <hr
+                  key={index}
+                  className="my-10 border-slate-200"
+                />
+              );
             }
 
+            {/* H2 Heading */}
             if (trimmed.startsWith("## ")) {
               return (
                 <h2
@@ -104,6 +124,7 @@ export default async function BlogPage({ params }) {
               );
             }
 
+            {/* H3 Heading */}
             if (trimmed.startsWith("### ")) {
               return (
                 <h3
@@ -115,6 +136,7 @@ export default async function BlogPage({ params }) {
               );
             }
 
+            {/* List Item */}
             if (trimmed.startsWith("- ")) {
               return (
                 <li
@@ -126,8 +148,12 @@ export default async function BlogPage({ params }) {
               );
             }
 
+            {/* Normal Paragraph */}
             return (
-              <p key={index} className="mb-6 text-slate-700 leading-7">
+              <p
+                key={index}
+                className="mb-6 text-slate-700 leading-7"
+              >
                 {trimmed}
               </p>
             );
@@ -137,16 +163,21 @@ export default async function BlogPage({ params }) {
         {/* POST FOOTER NAVIGATION */}
         <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="text-sm text-slate-500">
-            Published by <strong className="text-slate-900">{blog.author}</strong> on {blog.date}
+            Published by{" "}
+            <strong className="text-slate-900">
+              {blog.author}
+            </strong>{" "}
+            on {blog.date}
           </div>
+
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm rounded-lg transition-all shadow"
           >
-            <HiOutlineArrowLeft /> Back to All Articles
+            <HiOutlineArrowLeft />
+            Back to All Articles
           </Link>
         </div>
-
       </article>
     </main>
   );
