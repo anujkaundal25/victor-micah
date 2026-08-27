@@ -13,13 +13,36 @@ import Footer from "@/component/ui/Footer";
     subsets: ["latin"],
   });
 
+  // export const metadata = {
+  //   title: "Victor Micah",
+  //   description: "Victor Micah",
+  //   icons :{
+  //     icon: "/fav.png"
+  //   }
+  // };
   export const metadata = {
+  metadataBase: new URL("https://victor-micah.vercel.app"),
+  title: "Victor Micah",
+  description: "Victor Micah",
+  icons: {
+    icon: "/fav.png",
+  },
+  openGraph: {
     title: "Victor Micah",
     description: "Victor Micah",
-    icons :{
-      icon: "/fav.png"
-    }
-  };
+    url: "https://victor-micah.vercel.app",
+    siteName: "Victor Micah",
+    images: [
+      {
+        url: "/fav.png", // Or a dedicated 1200x630px banner image for better results
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
 
   export default function RootLayout({ children }) {
     return (
