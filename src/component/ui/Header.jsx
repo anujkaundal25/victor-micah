@@ -81,11 +81,11 @@ function Header() {
           {/* Contact Details with Icons */}
           <div className="flex flex-wrap items-center gap-6 pl-11">
             <a
-              href="mailto:contact@victormicah.com"
+              href="mailto:contact@mchinnovations.com"
               className="flex items-center gap-2 hover:text-white transition-colors"
             >
               <HiMail className="text-slate-400" size={16} />
-              contact@victormicah.com
+              contact@mchinnovations.com
             </a>
             <a
               href="tel:6784628728"

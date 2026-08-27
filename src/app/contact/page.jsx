@@ -76,7 +76,7 @@ function ContactPage() {
             {/* Direct Contact Cards */}
             <div className="space-y-4">
               <a 
-                href="mailto:contact@victormicah.com" 
+                href="mailto:contact@mchinnovations.com" 
                 className="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:border-slate-400 transition group"
               >
                 <div className="w-12 h-12 rounded-lg bg-slate-100 flex items-center justify-center text-slate-900 group-hover:bg-slate-900 group-hover:text-white transition-colors">
@@ -84,7 +84,7 @@ function ContactPage() {
                 </div>
                 <div>
                   <span className="block text-xs font-semibold text-slate-500 uppercase tracking-wider">Email Us</span>
-                  <span className="text-sm font-bold text-slate-900">contact@victormicah.com</span>
+                  <span className="text-sm font-bold text-slate-900">contact@mchinnovations.com</span>
                 </div>
               </a>
 

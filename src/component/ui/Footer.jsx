@@ -24,7 +24,7 @@ function Footer() {
             <div className="space-y-2 text-sm text-slate-300 pt-2">
               <p className="flex items-center gap-2">
                 <span className="font-medium text-white">Email:</span>{" "}
-                contact@victormicah.com
+                contact@mchinnovations.com
               </p>
               <p className="flex items-center gap-2">
                 <span className="font-medium text-white">Phone:</span>{" "}

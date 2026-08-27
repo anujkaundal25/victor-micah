@@ -203,7 +203,7 @@ function AboutPage() {
             </p>
             <div className="pt-4">
               <a
-                href="mailto:contact@victormicah.com"
+                href="mailto:contact@mchinnovations.com"
                 className="inline-block px-8 py-3.5 bg-white text-slate-900 font-semibold text-sm rounded-lg shadow hover:bg-slate-100 transition"
               >
                 Start a Conversation

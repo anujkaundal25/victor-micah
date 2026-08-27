@@ -192,7 +192,7 @@ function ServicesPage() {
           </p>
           <div className="pt-6">
             <a
-              href="mailto:contact@victormicah.com"
+              href="mailto:contact@mchinnovations.com"
               className="inline-block px-8 py-4 bg-slate-900 text-white font-semibold text-sm rounded-lg shadow-lg hover:bg-slate-800 hover:-translate-y-0.5 transition-all duration-300"
             >
               Request a Consultation
