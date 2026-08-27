@@ -78,7 +78,7 @@ function Services() {
         <div className="text-center pt-6 flex items-center justify-center gap-2 text-sm">
           <span className="text-slate-600 font-medium">Lets Discover More</span>
           <a
-            href="#all-services"
+            href="/service"
             className="text-slate-900 font-bold hover:text-slate-600 inline-flex items-center gap-1 transition-colors"
           >
             &rarr; See All Services

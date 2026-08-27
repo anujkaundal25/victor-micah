@@ -5,6 +5,7 @@ import React from "react";
 function Blog() {
   const blogList = [
     {
+      slug: "digital-transformation-atlanta-abroad-2026",
       title: "The Future of Digital Transformation in 2026",
       description:
         "Digital transformation in Atlanta and abroad is no longer a competitive advantage, it has become a survival requirement. In 2026, companies across healthcare, logistics, government, finance, retail, and manufacturing...",
@@ -14,6 +15,7 @@ function Blog() {
         "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1000",
     },
     {
+      slug: "erp-systems-businesses-run-smarter-scale-better",
       title: "ERP Systems: How Businesses Use Them to Run Smarter",
       description:
         "ERP systems are one of the most important tools a growing business can use to stay organized. They bring core operations into one place so teams can manage finance, inventory, projects, purchasing, reporting, and other...",
@@ -23,6 +25,7 @@ function Blog() {
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
     },
     {
+      slug: "saas-development-how-modern-software-products-are-built-to-scale",
       title:
         "SaaS Development: How Modern Software Products Are Built to Scale",
       description:
@@ -33,6 +36,7 @@ function Blog() {
         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
     },
     {
+      slug: "enterprise-software-what-it-is-why-it-matters",
       title:
         "Enterprise Software: What It Is, Why It Matters, and How Businesses Use It to Scale",
       description:
@@ -42,7 +46,8 @@ function Blog() {
       image:
         "https://i0.wp.com/novarisstudio.com/wp-content/uploads/2026/05/Novaris_enterprise-software_blog_image_upated.jpg?fit=1254%2C1254&ssl=1",
     },
-     {
+    {
+      slug: "ai-software-development-how-businesses-build-smarter",
       title:
         "AI Software Development: How Businesses Build Smarter, Faster, and More Scalable Products",
       description:
@@ -80,7 +85,7 @@ function Blog() {
 
         {/* 3 Blog Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogList.slice(0,3).map((blog, index) => (
+          {blogList.slice(0, 3).map((blog, index) => (
             <div
               key={index}
               className="relative bg-slate-600 text-white rounded-3xl overflow-hidden shadow-xl flex flex-col justify-between group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
@@ -99,12 +104,6 @@ function Blog() {
                     {blog.date} {blog.month}
                   </span>
                 </div>
-
-                {/* Date Badge overlapping the bottom-left of the image */}
-                <div className="absolute bottom-3 left-4 z-20 bg-slate-900/90 backdrop-blur-sm text-white text-center rounded-xl px-3 py-1.5 shadow-md border border-white/20">
-                  {/* <span className="block text-sm font-semibold leading-tight">{blog.date} {blog.month}</span> */}
-                  {/* <span className="block text-[10px] uppercase font-medium text-slate-300">{blog.month}</span> */}
-                </div>
               </div>
 
               {/* Content Section */}
@@ -121,7 +120,7 @@ function Blog() {
                 {/* Learn More Button inside the card */}
                 <div className="pt-2">
                   <a
-                    href="#blog-detail"
+                    href={`/blog/${blog.slug}`}
                     className="inline-block py-2.5 px-6 bg-slate-900 text-white font-semibold text-xs uppercase tracking-wider rounded-xl shadow hover:bg-white hover:text-slate-900 transition"
                   >
                     Learn More &rarr;

@@ -137,11 +137,11 @@ function ServicesPage() {
                 </div>
               </div>
 
-              <div className="p-6 pt-0">
+              {/* <div className="p-6 pt-0">
                 <a href="#" className="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
                   Learn More <HiOutlineArrowRight />
                 </a>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

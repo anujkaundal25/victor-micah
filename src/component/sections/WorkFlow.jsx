@@ -83,9 +83,6 @@ function WorkFlow() {
                 <span className="text-slate-600 opacity-70">
                   Phase {step.number} of 05
                 </span>
-                <span className="text-slate-400 group-hover:text-slate-900 transition-colors">
-                  &rarr;
-                </span>
               </div>
             </div>
           ))}
@@ -123,9 +120,6 @@ function WorkFlow() {
               <div className="pt-4 border-t border-slate-100 flex justify-between items-center text-xs font-semibold uppercase tracking-wider">
                 <span className="text-slate-600 opacity-70">
                   Phase {step.number} of 05
-                </span>
-                <span className="text-slate-400 group-hover:text-slate-900 transition-colors">
-                  &rarr;
                 </span>
               </div>
             </div>
